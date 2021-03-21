@@ -4,9 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Product
+class Product extends Model
 {
-    public static function get()
+
+    public function category()
     {
 
     }

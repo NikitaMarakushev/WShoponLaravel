@@ -2,7 +2,7 @@
     <div class="thumbnail">
         <img src="" alt="">
         <div class="caption">
-            <h3>{{ $product->name }}</h3>
+             <h3>{{ $product->name }}</h3>
             <p>{{ $product->price }}</p>
             <p>
                 <form action="{{ route('basket-add', $product) }}" method="POST">
