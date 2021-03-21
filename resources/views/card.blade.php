@@ -5,8 +5,11 @@
             <h3>{{ $product->name }}</h3>
             <p>{{ $product->price }}</p>
             <p>
-                <a href=""</a>
-                <a href=""></a>
+                <form action="{{ route('basket-add', $product) }}" method="POST">
+                <a href="{{ route('basket') }}" class="btn btn-primary" role="button">В корзину</a>
+                <a href="{{ route("product", [$product->category->code, $product->code]) }}" class="btn btn-default" role="button">подобнее</a>
+                @csrf
+                </form>
             </p>
         </div>
     </div>
