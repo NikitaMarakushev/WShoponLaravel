@@ -13,10 +13,12 @@ class CreateOrderProductTable extends Migration
      */
     public function up()
     {
-        $table->bigIncrements('id');
-        $table->integer('order_id');
-        $table->integer('product_id');
-        $table->timestamps();
+        Schema::create('order_products', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->integer('order_id');
+            $table->integer('product_id');
+            $table->timestamps();
+        });
     }
 
     /**
