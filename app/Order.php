@@ -14,6 +14,10 @@ class Order extends Model
     {
     }
 
+    public static function changeFullSum(int $param)
+    {
+    }
+
     public function product()
     {
         return $this->belongsToMany(Product::class);
