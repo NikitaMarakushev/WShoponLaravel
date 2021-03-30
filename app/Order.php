@@ -18,6 +18,14 @@ class Order extends Model
     {
     }
 
+    public static function findOrFail(\Illuminate\Session\SessionManager $orderId)
+    {
+    }
+
+    public static function eraseOrderSum()
+    {
+    }
+
     public function product()
     {
         return $this->belongsToMany(Product::class);

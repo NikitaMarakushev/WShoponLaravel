@@ -11,16 +11,31 @@ class BasketController extends Controller
     public function basket()
     {
         $orderId = session('orderId');
-        if (!is_null($orderId)) {
-            $order = findOrFail($orderId);
-
-        }
+        $order = Order::findOrFail($orderId);
         return view('basket', compact('order'));
+    }
+
+    public function basketConfirm(Request $request)
+    {
+        $orderId = session('orderId');
+        return redirect()->route('index');
+        $order = Order::find($orderId);
+        $success = $order->saveOrder($request->name, $request->phone);
+
+        if ($success) {
+            session()->flash('success', 'Ваш заказ принят');
+        } else {
+            session()->flash('warning', 'Ошибка');
+        }
+
+        Order::eraseOrderSum();
     }
 
     public function basketPlace()
     {
-        return view('order');
+        $orderId = session('orderId');
+        $order = Order::find($orderId);
+        return view('order', compact('order'));
     }
 
     public function basketAdd($productId)
@@ -40,9 +55,6 @@ class BasketController extends Controller
     public function basketRemove($productId)
     {
         $orderId = session('orderId');
-        if (is_null($orderId)) {
-            return redirect()->route('basket');
-        }
         $order = Order::find($orderId);
 
         if ($order->products->contains($productId)) {
