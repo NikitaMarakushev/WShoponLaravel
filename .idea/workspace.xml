@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="738c615f-da42-4189-b589-d2877b361f3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_28_183413_create_order_product_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_28_183413_create_order_product_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/basket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +136,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/MyProjects/jspaint-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -159,7 +155,8 @@
       <option name="presentableId" value="Default" />
       <updated>1615239147750</updated>
       <workItem from="1615239149333" duration="2324000" />
-      <workItem from="1616322170997" duration="4128000" />
+      <workItem from="1616322170997" duration="4812000" />
+      <workItem from="1617077978292" duration="350000" />
     </task>
     <servers />
   </component>
@@ -171,6 +168,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="547" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1616326111544" />
+    <state x="549" y="207" key="FileChooserDialogImpl" timestamp="1616353451894">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="549" y="207" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1616353451894" />
     <state x="508" y="140" key="NewPhpClassDialog" timestamp="1615239650146">
       <screen x="0" y="0" width="1473" height="864" />
     </state>
